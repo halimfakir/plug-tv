@@ -1,5 +1,5 @@
 -- supabase/seeds/seed_countries.sql
--- Seed 20 countries for Plug TV
+-- Seed 21 countries for Plug TV (added Qatar)
 
 INSERT INTO public.countries (name, slug, iso_code, flag_url) VALUES
 ('Bangladesh','bangladesh','BD',NULL),
@@ -21,5 +21,6 @@ INSERT INTO public.countries (name, slug, iso_code, flag_url) VALUES
 ('Nepal','nepal','NP',NULL),
 ('Sri Lanka','sri-lanka','LK',NULL),
 ('Brazil','brazil','BR',NULL),
-('Mexico','mexico','MX',NULL)
+('Mexico','mexico','MX',NULL),
+('Qatar','qatar','QA',NULL)
 ON CONFLICT (slug) DO NOTHING;

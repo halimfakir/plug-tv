@@ -318,11 +318,11 @@ VALUES
   (SELECT id FROM public.languages WHERE code='en'),
   '/logos/placeholders/default-tv.svg','https://www.cbc.ca/kids', false, NULL, ARRAY['kids','family']),
 
-('science-now','Science Now','Science and technology documentaries and features (placeholder).',
+('national-geographic','National Geographic','Science, exploration and documentary programming from National Geographic.',
   (SELECT id FROM public.countries WHERE slug='usa'),
-  (SELECT id FROM public.categories WHERE slug='science'),
+  (SELECT id FROM public.categories WHERE slug='documentary'),
   (SELECT id FROM public.languages WHERE code='en'),
-  '/logos/placeholders/default-tv.svg','https://www.sciencenow.example.com', false, NULL, ARRAY['science','education']),
+  '/logos/placeholders/default-tv.svg','https://www.nationalgeographic.com', false, NULL, ARRAY['documentary','science']),
 
 ('lifestyle-tv','Lifestyle TV','Lifestyle and reality programming (placeholder).',
   (SELECT id FROM public.countries WHERE slug='australia'),
